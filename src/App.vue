@@ -11,18 +11,20 @@ import Sample1 from './samples/Sample1.vue'
 import Sample2 from './samples/Sample2.vue'
 import Sample3 from './samples/Sample3.vue'
 import Sample4 from './samples/Sample4.vue'
+import Sample5 from './samples/Sample5.vue'
 
 export default {
   name: 'App',
-  components: { Menu, Sample1, Sample2, Sample3, Sample4 },
+  components: { Menu, Sample1, Sample2, Sample3, Sample4, Sample5 },
   data: () => ({
     samples: [
       { component: 'Sample1', text: 'Menu 1' },
       { component: 'Sample2', text: 'Menu 2' },
       { component: 'Sample3', text: 'Smoke 1' },
       { component: 'Sample4', text: 'Smoke 2' },
+      { component: 'Sample5', text: 'Layers' },
     ],
-    component: Sample2,
+    component: Sample5,
   }),
   methods: {
     changeItem(item) {
