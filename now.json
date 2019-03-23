@@ -1,0 +1,6 @@
+{
+  "name": "css-sample",
+  "version": 2,
+  "alias": "css-sample",
+  "files": ["dist"]
+}

@@ -35,6 +35,10 @@ export default {
   font-family: 'Poopins', sans-serif;
   font-weight: 600;
   background: #fff;
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  z-index: 100;
 
   ul {
     padding: 0;

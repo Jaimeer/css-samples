@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "pretty": "prettier --write '**/*.{js,json}'",
-    "tunnel": "ngrok http 8080"
+    "tunnel": "ngrok http 8080",
+    "deploy": "npm run build && now && now --target production"
   },
   "dependencies": {
     "vue": "^2.6.10"

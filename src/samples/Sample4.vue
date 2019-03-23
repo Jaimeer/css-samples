@@ -3,14 +3,14 @@
     <section>
       <video src="../assets/smoke.mp4" autoplay muted></video>
       <h1>
-        <span>M</span>
-        <span>U</span>
-        <span>H</span>
-        <span>H</span>
+        <span>J</span>
         <span>A</span>
+        <span>I</span>
         <span>M</span>
-        <span>A</span>
-        <span>D</span>
+        <span>E</span>
+        <span>_</span>
+        <span>E</span>
+        <span>R</span>
       </h1>
     </section>
   </div>
@@ -30,6 +30,18 @@ section {
   height: 100vh;
   background: #000;
 }
+section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #f00, #f00, #0f0, #0ff, #ff0, #0ff);
+  mix-blend-mode: color;
+  pointer-events: none;
+  z-index: 3;
+}
 video {
   position: absolute;
   top: 50%;
@@ -42,6 +54,7 @@ video {
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+  z-index: 1;
 }
 h1 {
   margin: 0;
@@ -55,6 +68,7 @@ h1 {
   font-size: 5em;
   font-family: sans-serif;
   letter-spacing: 0.4em;
+  z-index: 2;
 }
 h1 span {
   opacity: 0;
